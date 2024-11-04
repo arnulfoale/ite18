@@ -1,0 +1,107 @@
+/* Background settings */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background: url('img/programming-background-with-person-working-with-codes-computer.jpg') no-repeat center center fixed; /* Replace with your background image */
+    background-size: cover;
+  }
+  
+  /* Background overlay */
+  .tree-background {
+    background-color: rgba(0, 0, 0, 0.6); /* Dark overlay */
+    padding: 20px;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 800px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+  }
+  
+  /* Centering the content */
+  .progression-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    color: #fff;
+  }
+  
+  h1 {
+    margin-top: 20px;
+    font-size: 2.5em;
+    color: #f2f2f2;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+  }
+  
+  /* Tree structure */
+  .tree {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .tier-1, .tier-2 {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .class, .base-class, .hybrid-class {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-weight: bold;
+    font-size: 1.1em;
+  }
+  
+  .class:hover, .base-class:hover, .hybrid-class:hover {
+    transform: scale(1.1);
+    background-color: #0056b3;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Skills display */
+  .skills-display {
+    margin-top: 20px;
+    background-color: #fff;
+    color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    max-width: 350px;
+    text-align: left;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  
+  /* Animation for skills display */
+  .skills-display.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* Mobile responsive design */
+  @media (max-width: 768px) {
+    .tier-1, .tier-2 {
+      flex-direction: column;
+    }
+    .class, .base-class, .hybrid-class {
+      font-size: 1em;
+      padding: 8px 16px;
+    }
+  }
+
+  img {
+    max-width: 200px; /* or any size you prefer */
+    height: auto;
+}

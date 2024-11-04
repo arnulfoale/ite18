@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ale Arnulfo - Progression Tree</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+ 
+  <div class="progression-container">
+    
+    <h1>Progression Tree</h1>
+    
+    <div class="tree-background">
+      <div class="tree">
+        <div class="base-class" onclick="showSkills('Novice Programmer')">
+          Novice Programmer
+        </div>
+        
+        <div class="tier-1">
+          <div class="class front-end" onclick="showSkills('Front-End Developer')">Front-End Developer</div>
+          <div class="class back-end" onclick="showSkills('Back-End Developer')">Back-End Developer</div>
+          <div class="class game-dev" onclick="showSkills('Game Developer')">Game Developer</div>
+        </div>
+
+        <div class="tier-2">
+          <div class="class ui-designer" onclick="showSkills('UI Designer')">UI Designer</div>
+          <div class="class ux-engineer" onclick="showSkills('UX Engineer')">UX Engineer</div>
+          <div class="class db-architect" onclick="showSkills('Database Architect')">Database Architect</div>
+          <div class="class api-engineer" onclick="showSkills('API Engineer')">API Engineer</div>
+          <div class="class three-d-designer" onclick="showSkills('3D Game Designer')">3D Game Designer</div>
+          <div class="class ai-programmer" onclick="showSkills('AI Programmer')">AI Programmer</div>
+        </div>
+
+        <div class="hybrid-class" onclick="showSkills('UI/UX Game Designer')">
+          UI/UX Game Designer
+        </div>
+      </div>
+
+      <div class="skills-display" id="skillsDisplay"></div>
+    </div>
+  </div>
+
+  <script src="scrip.js"></script>
+</body>
+</html>
